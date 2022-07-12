@@ -1,0 +1,15 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "hello_world_cli"
+readme = "README.md"
+version = "0.1.0"
+description = "Hello World example cli"
+dependencies = [
+    "click>=0.8"
+]
+
+[project.scripts]
+hello_world = "hello_world_cli:hello_world"

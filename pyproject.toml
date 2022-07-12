@@ -10,9 +10,10 @@ license = {file = "LICENSE"}
 classifiers = ["License :: OSI Approved :: MIT License"]
 version = "0.1.0"
 description = "A simple REST API for Click Apps"
+dependencies = [
+    "fastapi>=0.7",
+    "python-dotenv>=0.20.0"
+]
 
 [project.urls]
 Home = "https://ianknox.net"
-
-[dependencies]
-Click = "^8.0"
