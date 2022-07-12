@@ -1,0 +1,15 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "dbt_ish_cli"
+readme = "README.md"
+version = "0.1.0"
+description = "A mocked cli that returns ndjson like dbt"
+dependencies = [
+    "click>=0.8"
+]
+
+[project.scripts]
+dbt_ish = "dbt_ish_cli:dbt_ish"
